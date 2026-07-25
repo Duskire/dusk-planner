@@ -5,30 +5,43 @@ import Taskbox from "@/components/taskbox";
 
 export default function Home() {
   return (
-    <div className='h-screen'>
-      <div className='flex flex-col h-full'>
-        <div>
-          <Navbar />
-        </div>
-        <div className='flex flex-row grow min-h-0'>
-          <div className='basis-1/4 border-r border-gray-400 overflow-auto'>
-            <Leftbar />
-          </div>
-          <div className='basis-1/4 border-r border-gray-400 overflow-auto'>
+
+    /*  <div className='flex flex-col h-screen w-screen overflow-hidden'>
+      <div className='flex flex-row grow min-h-0 overflow-auto'>
+      </div>
+    </div> */
+    
+    <div className="flex h-screen w-screen overflow-hidden">
+
+      <Leftbar />
+
+      <div className="flex flex-col flex-1 h-full">
+
+        <Navbar />
+
+        <main className="flex-1 grid grid-cols-3 divide-x min-h-0 divide-gray-200 bg-white">
+
+          <div className="p-6 overflow-y-auto">
+            <h2 className="font-bold mb-2">Not Started</h2>
             <Taskbox />
             <Taskbox />
             <Taskbox />
             <Taskbox />
             <Taskbox />
           </div>
-          <div className='basis-1/4 border-r border-gray-400 overflow-auto'>
+
+          <div className="p-6 overflow-y-auto">
+            <h2 className="font-bold mb-2">In Progress</h2>
             <Taskbox />
             <Taskbox />
           </div>
-          <div className='basis-1/4 overflow-auto'>
-            
+
+
+          <div className="p-6 overflow-y-auto">
+            <h2 className="font-bold mb-2">Completed</h2>
           </div>
-        </div>
+
+        </main>
       </div>
     </div>
   );
