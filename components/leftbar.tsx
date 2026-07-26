@@ -14,6 +14,9 @@ export default function Leftbar() {
         />
         <div className="my-auto hover:underline">Planner</div>
       </div>
+      <div className="mx-4">
+        Boards
+      </div>
     </aside>
   );
 }
