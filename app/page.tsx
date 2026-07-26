@@ -5,12 +5,6 @@ import Taskbox from "@/components/taskbox";
 
 export default function Home() {
   return (
-
-    /*  <div className='flex flex-col h-screen w-screen overflow-hidden'>
-      <div className='flex flex-row grow min-h-0 overflow-auto'>
-      </div>
-    </div> */
-    
     <div className="flex h-screen w-screen overflow-hidden">
 
       <Leftbar />
@@ -23,7 +17,6 @@ export default function Home() {
 
           <div className="p-6 overflow-y-auto">
             <h2 className="font-bold mb-2">Not Started</h2>
-            <Taskbox />
             <Taskbox />
           </div>
 
@@ -38,7 +31,7 @@ export default function Home() {
           </div>
 
           <div className="p-6 overflow-y-auto">
-            
+
           </div>
 
         </main>
